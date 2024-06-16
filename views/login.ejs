@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form action="/login" name="login-form" method="post">
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name.."
+            onblur="this.placeholder='Enter your name..'"
+            onfocus="this.placeholder=''"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password.."
+            onblur="this.placeholder='Enter password..'"
+            onfocus="this.placeholder=''"
+            required
+          />
+        </div>
+        <input type="submit" value="Login" />
+      </form>
+      <h3 style="display: inline">
+        Don't have a account?
+        <a href="/signup" class="link">Sign Up</a>
+      </h3>
+    </div>
+    <script>
+      // Check if the URL contains a query parameter indicating successful sign-up
+      const urlParams = new URLSearchParams(window.location.search);
+      const success = urlParams.get('signup');
+
+      // If the 'signup' parameter is present and equals 'success', display the alert
+      if (success === 'success') {
+        alert('You have successfully signed up!');
+      }
+    </script>
+  </body>
+</html>

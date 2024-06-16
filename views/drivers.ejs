@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ride Booking - Drivers List</title>
+    <link rel="stylesheet" href="css/drivers.css" />
+  </head>
+  <body>
+    <div class="drivers-container">
+      <h2>Available Drivers</h2>
+      <ul id="driversList" class="drivers-list">
+        <% for(let i=0;i<drivers.length;i++) { %>
+          <li class="driver-box">
+            <div class="driver-details">
+              <strong>Name:</strong> <%= drivers[i].name %><br>
+              <strong>Gender:</strong> <%= drivers[i].gender %><br>
+              <strong>Vehicle Number:</strong> <%= drivers[i].vehicleNumber %><br>
+              <strong>Driver Number:</strong> <span class="driver-number"><%= drivers[i].driverNumber %></span><br>
+              <button class="accept-button" driver_name=<%= drivers[i].name %> >Accept</button>
+            </div>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

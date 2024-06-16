@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ride Booking - Main</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Book a Ride</h2>
+      <form action="/ride-booking" method="post" id="rideForm">
+        <div class="input-group">
+          <input
+            type="text"
+            id="pickupLocation"
+            name="pickupLocation"
+            placeholder="Enter pickuplocation.."
+            onblur="this.placeholder='Enter pickuplocation..'"
+            onfocus="this.placeholder=''"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            id="dropoffLocation"
+            name="dropoffLocation"
+            placeholder="Enter dropofflocation.."
+            onblur="this.placeholder='Enter dropofflocation..'"
+            onfocus="this.placeholder=''"
+            required
+          />
+        </div>
+        <button type="submit">Book Ride</button>
+      </form>
+    </div>
+  </body>
+</html>

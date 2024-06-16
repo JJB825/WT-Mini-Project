@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ride Booking - Confirmation</title>
+    <link rel="stylesheet" href="css/confirmation.css" />
+  </head>
+  <body>
+    <div class="confirmation-container">
+      <h2>Your Ride Confirmation</h2>
+      <p>Here are your details of your ride:</p>
+      <p>
+        <strong>Ride Code:</strong> <span id="rideCode"><%= rideCode %></span>
+      </p>
+      <p>
+        <strong>Driver Name:</strong>
+        <span id="rideCode"><%= driverName %></span>
+      </p>
+      <p>Thank you for choosing our service!</p>
+      <p>Please provide your feedback:</p>
+      <form id="feedbackForm">
+        <textarea
+          id="feedback"
+          rows="4"
+          placeholder="Write your feedback here...."
+          onblur="this.placeholder='Write your feedback here....'"
+          onfocus="this.placeholder=''"
+        ></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

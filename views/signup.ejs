@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form action="/signup" name="signup-form" method="post">
+        <div class="form-page">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name.."
+            onblur="this.placeholder='Enter your name..'"
+            onfocus="this.placeholder=''"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-page">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create password.."
+            onblur="this.placeholder='Create password..'"
+            onfocus="this.placeholder=''"
+            required
+          />
+        </div>
+        <input type="submit" value="SignUp" />
+      </form>
+      <h3 style="display: inline">
+        Already have a account?
+        <a href="/" class="link">Login</a>
+      </h3>
+    </div>
+  </body>
+</html>

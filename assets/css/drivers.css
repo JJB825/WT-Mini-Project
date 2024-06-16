@@ -1,0 +1,48 @@
+.drivers-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center; /* Center the text inside the container */
+}
+
+.driver-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.driver-details {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.driver-number {
+  color: #007bff;
+}
+h2 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.accept-button {
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: #28a745; /* Green background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove button border */
+  padding: 8px 16px; /* Add padding */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s; /* Add transition effect for background color */
+}
+
+.accept-button:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
